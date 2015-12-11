@@ -1,0 +1,76 @@
+<link href="css/home.css" rel="stylesheet">
+
+
+<ion-view view-title="统计">
+
+
+  <ion-content class="padding">
+    <ion-refresher on-refresh="doRefresh()"
+                   pulling-text="松开刷新"
+                   refreshing-text="更新历史数据，稍后..."
+                   refreshing-icon="ion-loading-b">
+    </ion-refresher>
+    <header><span class="logo"></span>
+      <span class="movieTxt fs_13" style="margin-left: 10px;">当前城市：</span>
+      <a href="switchCity.html" class="city fs_13">&nbsp;&nbsp;上海市&nbsp;</a>
+    </header>
+    <nav class="fs_13">
+      <a href="#">
+        <div class="quanDiv"></div>
+        比比电影</a>
+      <a href="#">
+        <div class="quanDiv"></div>
+        比比影院</a>
+    </nav>
+    <section class="showlist">
+      <div class="showtitle">
+        <span class="font_414965 fs_15">热映影片</span>
+        <a href="filmlist.html" class="font_8f8f8f fs_13">38部正在热映 &gt;</a>
+      </div>
+      <div class="pic_list" style="display: block; transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+        <div><a href="filmdetail.html?filmId=201512291007"><p><img
+          src="http://pic.spider.com.cn/pic/filmpic/jdt/1449130087843_mobile.jpg" width="100%"><span><i
+          class="fs_13">9.5</i></span></p><em class="common_slh">万万没想到</em></a><a
+          href="filmdetail.html?filmId=201512647006"><p><img
+          src="http://pic.spider.com.cn/pic/filmpic/jdt/1435113797007_mobile.jpg" width="100%"><span><i
+          class="fs_13">8.</i><i class="fs_10">2</i></span></p><em class="common_slh">极盗者</em></a><a
+          href="filmdetail.html?filmId=201512163107"><p><img
+          src="http://pic.spider.com.cn/pic/filmpic/jdt/1449474976308_mobile.jpg" width="100%"><span><i
+          class="fs_13">9.</i><i class="fs_10">0</i></span></p><em class="common_slh">师父</em></a></div>
+        <div><a href="filmdetail.html?filmId=201510324706"><p><img
+          src="http://pic.spider.com.cn/pic/filmpic/jdt/1448003480928_mobile.jpg" width="100%"><span><i
+          class="fs_13">8.</i><i class="fs_10">8</i></span></p><em class="common_slh">火星救援</em></a><a
+          href="filmdetail.html?filmId=201411609872"><p><img
+          src="http://pic.spider.com.cn/pic/filmpic/jdt/1432794245402_mobile.jpg" width="100%"><span><i
+          class="fs_13">8.</i><i class="fs_10">8</i></span></p><em class="common_slh">极速风流</em></a><a
+          href="filmdetail.html?filmId=201512576406"><p><img
+          src="http://pic.spider.com.cn/pic/filmpic/jdt/1441102325568_mobile.jpg" width="100%"><span><i
+          class="fs_13">8.</i><i class="fs_10">5</i></span></p><em class="common_slh">怦然星动</em></a></div>
+      </div>
+    </section>
+
+
+    <div class="showtitle"><span class="font_414965 fs_15">推荐影院</span></div>
+    <ion-list>
+      <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+        <h2>大光明电影院</h2>
+
+        <p>南京西路216号（近黄河路）</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+        <h2>SFC上影-永华店</h2>
+
+        <p>南京西路216号（近黄河路）</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-icon-right" type="item-text-wrap" href="#">
+        <h2>海上国际影城-月星环球港店</h2>
+
+        <p>南京西路216号（近黄河路）</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
