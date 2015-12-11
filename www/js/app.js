@@ -29,7 +29,7 @@ angular.module('bibimovie', ['ionic', 'bibimovie.services', 'bibimovie.controlle
       .state('home', {
         url: '/',
         templateUrl: 'templates/home.html',
-        controller: 'TutorialCtrl'
+        controller: 'HomeCtrl'
       })
     $urlRouterProvider.otherwise('/');
   });

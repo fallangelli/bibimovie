@@ -3,6 +3,6 @@ angular.module('bibimovie.controllers', [])
   // *******************
   // 向导页面
   // *******************
-  .controller('TutorialCtrl', function ($scope, $state) {
-
+  .controller('HomeCtrl', function ($scope, HomeService) {
+    $scope.movies = HomeService.findAll();
   })
