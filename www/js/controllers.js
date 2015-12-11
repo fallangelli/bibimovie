@@ -1,8 +1,9 @@
 angular.module('bibimovie.controllers', [])
 
-  // *******************
-  // 向导页面
-  // *******************
-  .controller('HomeCtrl', function ($scope, HomeService) {
-    $scope.movies = HomeService.findAll();
+  .controller('HomeCtrl', function ($scope, $http, ApiEndpoint, HomeService) {
+    var url = ApiEndpoint.server_url + "hotMovies?cityId=1";
+    $http.get(url)
+      .success(function (data) {
+        $scope.movies = data;
+      })
   })

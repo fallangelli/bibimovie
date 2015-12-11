@@ -1,9 +1,13 @@
-// Ionic Starter App
-
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
 angular.module('bibimovie', ['ionic', 'bibimovie.services', 'bibimovie.controllers'])
+  .constant('ApiEndpoint', {
+    server_url: 'http://localhost:8100/server_url/'
+
+
+    //his_url: 'http://vip.stock.finance.sina.com.cn/corp/go.php/vMS_MarketHistory/stockid/',
+    //hq_url: 'http://hq.sinajs.cn/',
+    //gf_url: 'http://www.gf.com.cn/match/nxsy/',
+    //img_url: 'http://image.sinajs.cn/newchart/'
+  })
 
   .run(function ($ionicPlatform) {
     $ionicPlatform.ready(function () {
