@@ -1,12 +1,6 @@
 angular.module('bibimovie', ['ionic', 'bibimovie.services', 'bibimovie.controllers'])
   .constant('ApiEndpoint', {
     server_url: 'http://localhost:8100/server_url/'
-
-
-    //his_url: 'http://vip.stock.finance.sina.com.cn/corp/go.php/vMS_MarketHistory/stockid/',
-    //hq_url: 'http://hq.sinajs.cn/',
-    //gf_url: 'http://www.gf.com.cn/match/nxsy/',
-    //img_url: 'http://image.sinajs.cn/newchart/'
   })
 
   .run(function ($ionicPlatform) {
@@ -29,11 +23,22 @@ angular.module('bibimovie', ['ionic', 'bibimovie.services', 'bibimovie.controlle
 
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
-
       .state('home', {
         url: '/',
         templateUrl: 'templates/home.html',
         controller: 'HomeCtrl'
+      })
+
+      .state('cinema', {
+        url: '/cinema',
+        templateUrl: 'templates/cinema.html',
+        controller: 'CinemaCtrl'
+      })
+
+      .state('moivecinema', {
+        url: '/moivecinema/:movieId',
+        templateUrl: 'templates/moivecinema.html',
+        controller: 'MovieCinemaCtrl'
       })
     $urlRouterProvider.otherwise('/');
   });
